@@ -1,6 +1,3 @@
-import React, { useState } from "react";
-import Flowchart from "flowchart-react";
-import { ConnectionData, NodeData } from "flowchart-react/dist/schema";
 import AffiliateChart from "./components/AffiliateChart";
 import Header from "./components/Header";
 import ChartControls from "./components/ChartControls";

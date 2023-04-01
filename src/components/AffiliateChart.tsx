@@ -1,14 +1,13 @@
-import React, { useCallback, useEffect, useState } from "react";
+import React, {  useEffect, useState } from "react";
 import Flowchart from "flowchart-react";
 import { ConnectionData, NodeData } from "flowchart-react/dist/schema";
 import { useSelector, useDispatch } from 'react-redux'
-import { updateNodes, updateConnections, clearChart, resetChart  } from '../redux/chartSlice'
+import { updateNodes, updateConnections  } from '../redux/chartSlice'
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
-import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';

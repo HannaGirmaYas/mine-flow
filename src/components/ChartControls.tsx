@@ -1,7 +1,6 @@
-import React from 'react'
 import FileDownloadOutlinedIcon from '@mui/icons-material/FileDownloadOutlined';
 import {  useDispatch } from 'react-redux'
-import { updateNodes, updateConnections, clearChart, resetChart  } from '../redux/chartSlice'
+import {  clearChart, resetChart  } from '../redux/chartSlice'
 const ChartControls = () => {
 
     const dispatch = useDispatch()
