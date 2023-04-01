@@ -1,46 +1,75 @@
-# Getting Started with Create React App
+# Hanna Girma's Test Task For Mine Marketing
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Hello, This is my submission for the test task. You can run the code as instructed below or see this deployed version  [Mine Flow](https://mine-flow.vercel.app/).
 
-## Available Scripts
+** Note: I designed the page to be similar with the mine marketing offical website. The inspiration for the page also came from the case study found on the website. **
 
-In the project directory, you can run:
+![Mine Flow](./src/assets/flow.png)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## How to Run
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### First clone this repository
 
-### `npm run build`
+```
+git clone https://github.com/HannaGirmaYas/mine-flow.git
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Install the packages
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+After cloning the repository, In the project directory, run 
 
-### `npm run eject`
+```
+npm install
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```
+to install all the packages
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Run the Project
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Finally run 
+```
+npm start
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```
 
-## Learn More
+### The Project
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+I decided on making a flow chart that explains how affiliate marketing works , and this flow chart can be edited by the users so they can add or remove content that aligns with how they will use affiliate marketing. The user can clear the chart , reset the chart to the initial state and download the chart.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### What I used
+
+`flowchart-react` : I used the package specified in the task to make the flowchart
+`@reduxjs/toolkit` : I used redux and redux toolkit for state managment
+`redux-persist`: I used redux persist to persist the data in local storage
+`tailwind` : I used tailwind css to style the page
+`@mui/material`: I used material ui to build the edit a node in the flow chart
+`@mui/icons-material`: I used material icons to add icons to the page
+`gsap`: I used gsap to animate the flowchart
+
+### Steps I took 
+
+- I first looked at the flowchart package and checked how much customization I could do
+
+- I then designed the page in figma to lay out what I wanted to do. The figma design is as seen below.
+![Figma Design](./src/assets/Figma.png)
+
+- I started implementing the page with react templated with typescript. 
+
+- When working with the flowchart package I started with the example code and I expanded on that by first setting up the state managment. I created a chart slice where I defined the charts inital state and the states and actions. I defined four actions updateNodes, updateConnections, clearChart and resetChart. I then created my store and added the reducer here. I then updated the index file to include the provider in which I passed the store.
+- I used useSelector and dispatch to access the store data and update it. I then installed react persist. I set up my persistor in my store and the updated the index page accordingly. 
+- Asides from the example code, I added an option to edit the new nodes text. I used the onDoubleClick event to create a node and a onNodeDoubleClick event to edit the node. I used material ui to add a dialog where you can input the title to a node.
+- I then started to implement my design accordingly. I split up the page into four components. The header, The chart , The controls and The footer.  I implemented the ui with tailwind according to my design and used the google font I used. 
+
+- When implementing the chart, I wanted more control over the styling so I inspected the page to find selectors where I can target the nodes. I then wrote some custom css code for the the nodes. I also wrote a scroll triggered animation code for the nodes with gsap. 
+
+- Finally , I made the page responsive with the use of tailwind.
+
+
+
+
+
+
