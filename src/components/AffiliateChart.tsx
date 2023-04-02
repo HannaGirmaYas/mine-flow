@@ -33,6 +33,14 @@ const AffiliateChart = () => {
   };
 
 
+  useEffect(()=>{
+    var data =  {
+        nodes ,
+        conns
+    }
+    localStorage.setItem('chartData', JSON.stringify(data)); 
+  }, [nodes,conns])
+
   function handleDoubleClick(event: React.MouseEvent<SVGGElement, MouseEvent>, zoom: number): void {
     const point = {
       x: event.nativeEvent.offsetX / zoom,
