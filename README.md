@@ -68,6 +68,10 @@ I decided on making a flow chart that explains how affiliate marketing works , a
 
 - Finally , I made the page responsive with the use of tailwind.
 
+### Persisting The Data
+
+I initially persisited the data to local storage with the use of redux-persist but one of the hints that was given to me was to use useEffect to save the data on local storage. So, I have a branch called useEffect that implements the persisting of the data with the use of useEffect.
+
 
 
 
