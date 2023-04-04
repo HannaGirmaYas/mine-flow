@@ -36,6 +36,26 @@ npm start
 
 ```
 
+## How To Control The Chart
+
+### Add a Node
+
+To add a node you can double click the chart background, this action will add a new node, either a  start, end or operation depending on the existence of the previous elements.
+
+[How To Add/Edit A Node Video](https://drive.google.com/file/d/1kF_hDOxkuQHwYu1ZNGcit0Ja2kXknW46/view?usp=share_link)
+
+### Edit a Node
+
+To edit a node you can double click the node you want to edit the text of, this action will open a dialog that will prompt you to change the title of the node.
+
+[How To Add/Edit A Node Video](https://drive.google.com/file/d/1kF_hDOxkuQHwYu1ZNGcit0Ja2kXknW46/view?usp=share_link)
+
+### Delete a Node
+
+To delete a node you can click the delete keyboard key.
+
+[How To Delete A Node Video](https://drive.google.com/file/d/1dlw4FcABM3Rd53ghao3_-HB8H0yLCNda/view?usp=share_link)
+
 ### The Project
 
 I decided on making a flow chart that explains how affiliate marketing works , and this flow chart can be edited by the users so they can add or remove content that aligns with how they will use affiliate marketing. The user can clear the chart , reset the chart to the initial state and download the chart.
